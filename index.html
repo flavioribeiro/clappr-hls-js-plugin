@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <script type="text/javascript" charset="utf-8" src="gt"></script>
+  <script type="text/javascript" charset="utf-8" src="http://cdn.clappr.io/latest/clappr.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="/dist/hlsjs.js"></script>
+  <title>HLSJS Test Page</title>
+  <script type="text/javascript" charset="utf-8">
+window.onload = function() {
+  var player = new Clappr.Player({
+    source: "https://s3-us-west-2.amazonaws.com/nytimesencoding/output_normalized0000_1_marathon_zombies_hls/video.m3u8",
+    parentId: '#player-wrapper',
+    plugins: { playback: [HLSJS] }
+  });
+}
+  </script>
+</head>
+<body>
+  <div id="player-wrapper">
+  </div>
+</body>
+</html>
+
