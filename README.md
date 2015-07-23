@@ -1,7 +1,7 @@
 clappr-hls-js-plugin
 ==================
 
-HLS support for [Clappr player](http://github.com/globocom/clappr) using JavaScript
+HLS support for [Clappr player](http://github.com/clappr/clappr) using JavaScript
 
 ![](http://www.quickmeme.com/img/8d/8d30a19413145512ad5a05c46ec0da545df5ed79e113fcf076dc03c7514eb631.jpg)
 
