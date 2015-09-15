@@ -1,6 +1,4 @@
-var HTML5VideoPlayback = require('html5_video')
-
-class HLSJS extends HTML5VideoPlayback {
+class HLSJS extends Clappr.HTML5Video {
   get name() { return 'hlsjs' }
   get attributes() { return {'width': '100%', 'height': '100%'} }
   render() { return this }
@@ -13,8 +11,6 @@ class HLSJS extends HTML5VideoPlayback {
 
   embedHls() {
       var script = document.createElement('script')
-      script.setAttribute("type", "text/javascript")
-      script.setAttribute("async", "async")
       script.setAttribute("src", "http://streambox.fr/mse/hls.js/dist/hls.js")
       script.onload = () => this.bootstrap()
       document.body.appendChild(script)
