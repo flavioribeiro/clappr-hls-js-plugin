@@ -1,25 +1,27 @@
-class HLSJS extends Clappr.HTML5Video {
+import {HTML5Video} from 'clappr'
+
+class HLSJS extends HTML5Video {
   get name() { return 'hlsjs' }
   get attributes() { return {'width': '100%', 'height': '100%'} }
   render() { return this }
   durationChange() {}
 
   constructor(options) {
-      super(options)
-      this.embedHls()
+    super(options)
+    this.embedHls()
   }
 
   embedHls() {
-      var script = document.createElement('script')
-      script.setAttribute("src", "http://streambox.fr/mse/hls.js/dist/hls.js")
-      script.onload = () => this.bootstrap()
-      document.body.appendChild(script)
+    var script = document.createElement('script')
+    script.setAttribute("src", "http://streambox.fr/mse/hls.js/dist/hls.js")
+    script.onload = () => this.bootstrap()
+    document.body.appendChild(script)
   }
 
   bootstrap() {
-      this.hls = new Hls()
-      this.hls.on(Hls.Events.MSE_ATTACHED, () => this.hls.loadSource(this.options.source))
-      this.hls.attachVideo(this.el)
+    this.hls = new Hls()
+    this.hls.on(Hls.Events.MSE_ATTACHED, () => this.hls.loadSource(this.options.source))
+    this.hls.attachVideo(this.el)
   }
 }
 
