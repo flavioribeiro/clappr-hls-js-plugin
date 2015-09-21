@@ -25,3 +25,6 @@ var player = new Clappr.Player({
     );
 ```
 
+## Demo
+
+http://flv.io/hlsjs
