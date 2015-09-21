@@ -12,7 +12,7 @@ Thanks to the AWESOME work of [Guillaume du Pontavice](https://github.com/mangui
 Import hlsjs.min.js
 
 ```javascript
-<script type="text/javascript" src="not_hosted_yet">
+<script type="text/javascript" src="http://flv.io/hlsjs/hlsjs.min.js">
 </script>
 ```
 and create Clappr Player adding the external plugin:
