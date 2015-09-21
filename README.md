@@ -19,7 +19,7 @@ and create Clappr Player adding the external plugin:
 
 ```javascript
 var player = new Clappr.Player({
-      source: "rtmp://source_here.m3u8", 
+      source: "http://source_here.m3u8", 
       parentId: "#player-wrapper", 
       plugins: {'playback': [HLSJS]}
     );
