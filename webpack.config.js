@@ -21,6 +21,7 @@ module.exports = {
     extensions: ['', '.js'],
   },
   output: {
+    path: path.resolve(__dirname, 'dist'),
     filename: 'hlsjs.js',
     library: 'HLSJS',
     libraryTarget: 'umd',
